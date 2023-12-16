@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./font/Reenie_Beanie/ReenieBeanie-Regular.ttf");
+    
+}
+
+* {
+    margin: 0;
+    /* border: 1px solid grey; */
+    font-family: "MyFont";
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+header > img {
+    height: 100px;
+}
+
+header > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+    margin: 20px;
+}
+
+#home-link,
+#menu-link,
+#contact-link {
+    padding: 20px;
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+#home-link:hover,
+#menu-link:hover,
+#contact-link:hover {
+    text-decoration: underline;
+}
+
+.home-content {
+    height: calc(100vh - calc(150px)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 5rem;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    gap:40px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    display: grid;
+    height: 500px;
+    grid-template-rows: repeat(3,100px);
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px  rgba(200, 200, 200, 0.7);
+    cursor: pointer;
+}
+
+.card img {
+    height: 300px;
+}
+
+.card p {
+    font-size: 19px;
+}
+
+.cocktail-name {
+    grid-row: 4/span 1;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cocktail-description {
+    text-align: center;
+    grid-row: 5/span 1;
+    padding: 10px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: calc(100vh - calc(180px)) ;
+    justify-content: space-between;
+}
+
+.contact-content {
+font-size: 19px;
+}
+
+footer {
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
